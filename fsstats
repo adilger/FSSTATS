@@ -616,7 +616,7 @@ sub print_report {
   $size_histo->print("  ", "KB");
 
   print "\n";
-  print "capacity used (Regualr file's space used on disk): Range, Count of files in range, number of files in range as a percent of total number of files, number of files in this range or smaller as a % of total # of file, total capacity used in range, total capacity used in range as a % of total capacity used, total capacity used in this range or smaller as a % of total capacity.\n";
+  print "capacity used (Regular file's space used on disk): Range, Count of files in range, number of files in range as a percent of total number of files, number of files in this range or smaller as a % of total # of file, total capacity used in range, total capacity used in range as a % of total capacity used, total capacity used in this range or smaller as a % of total capacity.\n";
   $cap_histo->print("  ", "KB");
 
   print "\n";
@@ -651,7 +651,7 @@ sub print_report {
          $slink_absolute ? ($slink_absolute / $slink_histo->{count})*100 : 0);
 
   print "\n";
-  print "time since last modification (Reguar files):Range in days, count of files in range, number of files in range as a % of total number of files, number of files in this range or smaller as a % of total number of files, total of age in range, total age in range as a % of total age of all files, total age in this range or smaller as a % of total age of all files.\n";
+  print "time since last modification (Regular files):Range in days, count of files in range, number of files in range as a % of total number of files, number of files in this range or smaller as a % of total number of files, total of age in range, total age in range as a % of total age of all files, total age in this range or smaller as a % of total age of all files.\n";
   $mtime_files_histo->print("  ", "days");
 
   print "\n";
@@ -659,7 +659,7 @@ sub print_report {
   $mtime_bytes_histo->print("  ", "days");
 
   print "\n";
-  print "time since creation (Reguar files):Range in days, count of files in range, number of files in range as a % of total number of files, number of files in this range or smaller as a % of total number of files, total of age in range, total age in range as a % of total age of all files, total age in this range or smaller as a % of total age of all files.\n";
+  print "time since creation (Regular files): Range in days, count of files in range, number of files in range as a % of total number of files, number of files in this range or smaller as a % of total number of files, total of age in range, total age in range as a % of total age of all files, total age in this range or smaller as a % of total age of all files.\n";
   $ctime_files_histo->print("  ", "days");
 
   print "\n";
@@ -667,7 +667,7 @@ sub print_report {
   $ctime_bytes_histo->print("  ", "days");
 
   print "\n";
-  print "time since last access (Reguar files):Range in days, count of files in range, number of files in range as a % of total number of files, number of files in this range or smaller as a % of total number of files, total of age in range, total age in range as a % of total age of all files, total age in this range or smaller as a % of total age of all files.\n";
+  print "time since last access (Regular files): Range in days, count of files in range, number of files in range as a % of total number of files, number of files in this range or smaller as a % of total number of files, total of age in range, total age in range as a % of total age of all files, total age in this range or smaller as a % of total age of all files.\n";
   $atime_files_histo->print("  ", "days");
 
 print "\n";
@@ -1306,7 +1306,7 @@ status message.
 
 =head1 EXAMPLES
 
-Collect filesystem statistics for the /usr1 heirarchy, printing
+Collect filesystem statistics for the /usr1 hierarchy, printing
 results on stdout:
 
     fsstats /usr1
